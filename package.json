@@ -3,6 +3,7 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
+		"build:emoji": "tsx emoji/convert.ts",
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
@@ -12,8 +13,14 @@
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.12.4",
 		"@types/node": "^25.3.5",
+		"tsx": "^4.21.0",
 		"typescript": "^5.5.2",
 		"vitest": "~3.2.0",
 		"wrangler": "^4.71.0"
+	},
+	"dependencies": {
+		"@slack/web-api": "^7.14.1",
+		"ff1-js": "^1.0.2",
+		"slack-cloudflare-workers": "^1.3.9"
 	}
 }

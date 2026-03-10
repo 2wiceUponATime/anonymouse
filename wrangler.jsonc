@@ -10,9 +10,14 @@
 	"observability": {
 		"enabled": true
 	},
+	"preview_urls": true,
 	"compatibility_flags": [
 		"nodejs_compat"
-	]
+	],
+	"vars": {
+		"CREATOR": "U09EFB5G6TS",
+		"PERMS_GROUP": "S01E4DN8S0Y",
+	}
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
