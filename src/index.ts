@@ -143,11 +143,11 @@ export default {
                                     }
                                 ]
                             },
-                            // {
-                            //     type: "section",
-                            //     text: mrkdwn(`By <@${env.CREATOR}>`)
-                            // },
-                            ...extraBlocks
+                            ...extraBlocks,
+                            {
+                                type: "section",
+                                text: mrkdwn(`<${env.GITHUB_LINK}|GitHub>`)
+                            }
                         ]
                     }
                 })
