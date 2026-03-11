@@ -240,7 +240,13 @@ export default {
                     await client.chat.update({
                         channel: replyThread.channel!,
                         ts: replyThread.ts!,
-                        text: `Replies to <${permalink.permalink}|your message> will appear here`,
+                        blocks: [
+                            {
+                                type: "section",
+                                text: mrkdwn(`Replies to <${permalink.permalink}|your message> will appear here`),
+                            }
+                        ],
+                        text: `Replies to ${thread.channel}/${thread.ts} will appear here`,
                     });
                 } else {
                     await client.chat.postEphemeral({
